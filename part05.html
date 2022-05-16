@@ -13,7 +13,7 @@
     <meta property="og:audio" content="https://scytar.github.io/edtech-hard-module04/audios/MACINTOSH%20PLUS%20-%20FLORAL%20SHOPPE%20-%2002%20リサフランク420%20-%20現代のコンピュー.mp3">
     <title>Exercises - Part 05</title>
 </head>
-<body>
+<body onmouseenter="playAudio()">
     <main class="mainSection">
         <h1 class="h1">Welcome to the Chilling Area</h1>
         <h2 class="h2">Relax and enjoy</h2>
@@ -55,4 +55,13 @@
         </p>
     </main>
 </body>
+<script>
+    var trigger = true;
+    function playAudio() {
+        if (trigger) {
+            document.getElementById("macintosh").play();
+            trigger = false;
+        }
+    }
+</script>
 </html>
