@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imgs/brunoadami.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div{
+    cursor: default;
+    width: 500px;
+    height: 300px;
+    border: 2px solid;
+    margin: 20px;
+}
+
+.HEX{
+    background-color: #808080;
+}
+
+.HEXA{
+    background-color: #FF000080;
+}
+
+.RGB{
+    background-color: rgb(255, 255, 0);
+}
+
+.RGBA{
+    background-color: rgba(100, 100, 255, .5);
+}
+
+.HSL{
+    background-color: hsl(120, 80%, 50%);
+}
+
+.HSLA{
+    background-color: hsla(200, 100%, 20%, .8);
+}
+
+.browser{
+    background-color: goldenrod;
+}
+
+.current{
+    background-color: currentColor;
+}
