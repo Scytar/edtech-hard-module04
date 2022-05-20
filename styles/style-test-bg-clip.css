@@ -1,0 +1,15 @@
+body{
+    background-color: green;
+}
+
+.clipMe{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    width: 95vw;
+    height: 95vh;
+    color: #00000000;
+    background-image: url(../imgs/chill-wallpaper.jpg);
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+}
