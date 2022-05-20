@@ -52,6 +52,10 @@ p{
     align-self: flex-start;
 }
 
+/* #secondP{
+
+} */
+
 #thirdP{
     align-self: flex-end;
 }
