@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #FFFFFFFF;
+    background-image: url(../imgs/chill-wallpaper.jpg);
+}
+
+div{
+    display: flex;
+    width: 500px;
+    height: 350px;
+    border: 2px solid #FFFFFFFF;
+    margin: 20px;
+}
+
+p{
+    display: flex;
+    border: 1px solid gold;
+    margin: 10px;
+    padding: 10px;
+}
+
+.image{
+    justify-content: center;
+    align-content: center;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal{
+    justify-content: center;
+}
+
+.diagonal{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#firstP{
+    align-self: flex-start;
+}
+
+#thirdP{
+    align-self: flex-end;
+}
