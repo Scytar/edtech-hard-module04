@@ -1,0 +1,387 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url(../fonts/quicksand-bold-webfont.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url(../fonts/quicksand-light-webfont.woff);
+    font-weight: 200;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imgs/chill-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+
+
+/* First Section */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    padding: 20px 0;
+}
+
+.firstSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    color: aliceblue;
+}
+
+.fullName{
+    display: flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    text-shadow: 4px 0 2px #000, -4px 0 2px #000, 0 4px 2px #000, 0 -4px 2px #000, 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+}
+
+.navA{
+    font-family: "Quicksand";
+    font-weight: 700;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.navMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.1rem 0.3rem;
+    border: solid currentColor 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.profession{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: 200;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.profileFigure{
+    display: flex;
+    justify-self: flex-end;
+    position: relative;
+    bottom: -75px;
+    border: solid 5px aliceblue;
+    border-radius: 80px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #000;
+}
+
+.tagA{
+    font-family: "Quicksand";
+    font-weight: 700;
+    text-decoration: none;
+    padding: 2px 8px;
+    border: outset 2px;
+    border-radius: 4px;
+}
+
+.tagA:link{
+    color: aliceblue;
+    border-color: aliceblue;
+}
+
+.tagA:visited{
+    color: bisque;
+    border-color: bisque;
+}
+
+.tagA:focus{
+    color: blueviolet;
+    border-color: blueviolet;
+}
+
+.tagA:active{
+    color: royalblue;
+    border-color: royalblue;
+}
+
+
+
+
+/* Main Section */
+
+.mainSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    min-height: 50vh;
+    background-color: #f0f8ffF0;
+    gap: 4vh 0;
+    padding: 7rem 0 2rem;
+}
+
+.mainTopic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 80vw;
+    padding: 0 0 1rem;
+    box-shadow: 0px 2px 0px #0008;
+}
+
+.topicItem{
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+}
+
+.topicItemWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 0.5rem;
+}
+
+.topicTitle{
+    width: 50%;
+    text-align: end;
+    font-family: "Quicksand";
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+
+
+
+/* Contact */
+
+.contactData{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0 2rem;
+    text-shadow: 2px 0 1px #000, -2px 0 1px #000, 0 2px 1px #000, 0 -2px 1px #000, 2px 2px 1px #000, -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem 0.5rem;
+}
+
+.contactInput{
+    width: 25rem;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 4px;
+    font-family: "Quicksand";
+    font-weight: 700;
+    background-color: #f0f8ffD0;
+}
+
+.contactInput:hover{
+    background-color: #f0f8ff;
+}
+
+.contactInput:focus{
+    background-color: #f0f8ff;
+}
+
+.contactMe{
+    font-family: "Quicksand";
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow: 3px 0 1px #000, -3px 0 1px #000, 0 3px 1px #000, 0 -3px 1px #000, 2px 2px 1px #000, -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000;
+}
+
+.contactSection{
+    min-height: 50vh;
+    padding: 3rem 0 0;
+}
+
+.infoWrapper{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.infoType{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+    text-align: end;
+    font-family: "Quicksand";
+    font-weight: 700;
+    list-style-type: none;
+}
+
+.infoData{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+    width: 50%;
+    font-family: "Quicksand";
+    list-style-type: none;
+}
+
+.sendBtn{
+    padding: 0.5rem 1rem;
+    background-color: #f0f8ffD0;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;   
+}
+
+.sendBtn:hover{
+    background-color: #f0f8ff;
+}
+
+.sendBtn:focus{
+    background-color: #f0f8ff;
+}
+
+.sendBtn:active{
+    color: bisque;
+    background-color: blueviolet;
+}
+
+.textArea{
+    min-width: 25rem;
+    min-height: 8rem;
+    overflow-x: hidden;
+}
+
+
+
+
+/* Footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 3vh 0;
+    height: 22vh;
+    padding: 3vh 0;
+    color: aliceblue;
+}
+
+.footerNote{
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerSocials{
+    display: flex;
+    flex-direction: row;
+    gap: 0 2rem;
+}
+
+@media (max-width: 600px) {
+    
+    /* Title Mobile */
+
+    .fullName{
+        font-size: 3.2rem;
+    }
+
+    .profession{
+        font-size: 1.8rem;
+    }
+
+    /* Main Mobile */
+
+    .mainTopic{
+        width: 90vw;
+        box-shadow: 0 0 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topicTitle{
+        min-width: 30%;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .topicItem{
+        text-align: justify;
+    }
+
+    .topicItemWrapper{
+        min-width: 80vw;
+    }
+
+    .softSkills{
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Contact Mobile */
+
+    .contactInput{
+        max-width: 20rem;
+    }
+
+    .infoData{
+        min-width: 60%;
+    }
+
+    .infoType{
+        min-width: 30%;
+    }
+
+    .sendBtn{
+        width: 10rem;
+        height: 4rem;
+    }
+
+    .textArea{
+        min-width: 20rem;
+        max-width: 20rem;
+    }
+
+    /* Footer Mobile */
+
+    .footerSocials{
+        gap: 0.5rem;
+    }
+
+}
