@@ -368,6 +368,10 @@ body{
         min-width: 30%;
     }
 
+    .infoWrapper{
+        align-items: flex-start;
+    }
+
     .sendBtn{
         width: 10rem;
         height: 4rem;
