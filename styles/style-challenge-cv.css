@@ -48,6 +48,7 @@ body{
     align-items: center;
     width: 100vw;
     height: 50vh;
+    min-height: 500px;
     color: aliceblue;
 }
 
@@ -86,6 +87,8 @@ body{
 }
 
 .profileFigure{
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-self: flex-end;
     position: relative;
@@ -94,6 +97,11 @@ body{
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 10px #000;
+}
+
+.profileImg{
+    width: 150px;
+    height: 150px;
 }
 
 .tagA{
