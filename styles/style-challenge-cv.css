@@ -91,7 +91,7 @@ body{
     position: relative;
     bottom: -75px;
     border: solid 5px aliceblue;
-    border-radius: 80px;
+    border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 10px #000;
 }
