@@ -325,6 +325,10 @@ body{
     
     /* Title Mobile */
 
+    .firstSection{
+        min-height: 450px;
+    }
+
     .fullName{
         font-size: 3.2rem;
     }
