@@ -3,3 +3,62 @@
     padding: 0;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imgs/brunoadami.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    gap: 40px;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 0 1px #FFF, 0 2px 1px #FFF;
+}
+
+section{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    gap: 40px;
+    border: dashed blueviolet 5px;
+    flex-flow: wrap row;
+}
+
+.fillBox{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0px;
+    border: solid 2px black;
+    border-radius: 12px;
+    background-color: #FFFFFF80;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.columnR{
+    flex-direction: column-reverse;
+}
+
+.row{
+    flex-direction: row;
+    /* writing-mode: vertical-lr; */
+}
+
+.rowR{
+    flex-direction: row-reverse;
+    /* writing-mode: vertical-lr; */
+}
+
+.grow{
+    flex-grow: 5;
+    background-color: #ff000080;
+}
+
+.shrink{
+    flex-shrink: 3;
+    background-color: #0000FF80;
+    /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_flex-shrink */
+}
