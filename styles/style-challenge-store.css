@@ -134,6 +134,10 @@ HTML MONTSERRAT
     flex-wrap: wrap;
 }
 
+#main{
+    width: 90vw;
+}
+
 
 
 
@@ -197,7 +201,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 20%;
-    gap: 12px;
+    gap: 12px 0;
 }
 
 #logo{
@@ -250,7 +254,6 @@ header{
     height: 70px;
     border-right: 1px solid black;
     transition: ease-in-out 200ms;
-    transition-property: color, background-color;
 }
 
 .navItem:hover{
