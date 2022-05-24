@@ -126,6 +126,10 @@ HTML MONTSERRAT
     text-decoration: underline;
 }
 
+.transition-200ms{
+    transition: ease-in-out 200ms;
+}
+
 .wrap{
     flex-wrap: wrap;
 }
@@ -144,6 +148,23 @@ HTML MONTSERRAT
 
 a{
     text-decoration: none;
+}
+
+a:link{
+    color: currentColor;
+}
+
+a:visited{
+    color: currentColor;
+}
+
+a:focus{
+    color: currentColor;
+}
+
+a:active{
+    color: #D6FF38;
+    text-shadow: 0 2px 0 #000F;
 }
 
 header{
@@ -228,6 +249,13 @@ header{
     min-width: 190px;
     height: 70px;
     border-right: 1px solid black;
+    transition: ease-in-out 200ms;
+    transition-property: color, background-color;
+}
+
+.navItem:hover{
+    color: #D6FF38;
+    background-color: #000F;
 }
 
 
@@ -297,12 +325,15 @@ h4{
     position: relative;
     color: #0000;
     font-size: 1.5rem;
-    background: linear-gradient(to bottom,#D6FF3800, #D6FF3800);
+    background: linear-gradient(to bottom,#D6FF3800 30%,#D6FF3800 , #D6FF38FF);
+    transition: ease-in-out 200ms;
+    opacity: 0;
 }
 
 .titleHidden:hover{
     color: #000F;
-    background: linear-gradient(to bottom,#D6FF3800, #D6FF3880);
+    opacity: 1;
+    
 }
 
 .titleHiddenText{
@@ -336,9 +367,7 @@ h5{
     background-position: center;
     background-size: 100%;
     cursor: pointer;
-    transition-property: background-size;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in-out;
+    transition: ease-in-out 200ms;
 }
 
 .productImg:hover{
@@ -374,6 +403,14 @@ h5{
     border: none;
     padding: 12px 24px;
     font-size: 1.1rem;
+    border: 2px solid #0000;
+    transition: ease-in-out 200ms;
+}
+
+#buyButton:hover{
+    color: #000F;
+    background-color: #D6FF38;
+    border: 2px solid #000F;
 }
 
 #productsSection{
@@ -546,4 +583,31 @@ ul{
     width: 24px;
     height: 24px;
     background-size: contain;;
+}
+
+
+
+
+
+
+/* Chat Box */
+
+#chatBox{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 12px 12px 0 12px;
+    background-color: #000F;
+}
+
+#chatIcon{
+    fill: #FFFF;
+}
+
+#chatIcon:hover{
+    fill: #D6FF38;
+    width: 60px;
+    height: 60px;
 }
