@@ -1,0 +1,549 @@
+/* 
+HTML MONTSERRAT
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;800&display=swap" rel="stylesheet"> 
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.display-hidden{
+    visibility: hidden;
+}
+
+.justify-start{
+    justify-content: start;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.gap-12{
+    gap: 12px;
+}
+
+.gap-24{
+    gap: 24px;
+}
+
+.gap-36{
+    gap: 36px;
+}
+
+.gap-48{
+    gap: 48px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.montserrat{
+    font-family: "Montserrat";
+}
+
+.arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.max-1920{
+    max-width: 1920px;
+}
+
+.max-1024{
+    max-width: 1024px;
+}
+
+.width-100vw{
+    width: 100vw;
+}
+
+.font-800{
+    font-weight: 800;
+}
+
+.font-600{
+    font-weight: 600;
+}
+
+.font-200{
+    font-weight: 200;
+}
+
+.font-300{
+    font-weight: 300;
+}
+
+.hover-visible{
+    opacity: 0;
+}
+
+.hover-visible:hover{
+    opacity: 1;
+}
+
+.list-style-none{
+    list-style-type: none;
+}
+
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Header */
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    border: 1px solid black;
+}
+
+#cartItems{
+    color: #D6FF38;
+    position: relative;
+    padding-top: 1rem;
+    right: 50%;
+}
+
+#discountAlert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 0.9rem;
+}
+
+#loginDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 12px;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 70px;
+    background-color: #D6FF38;
+    border-right: 1px solid black;
+    font-size: 1.3rem;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+#navWrapper{
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.iconLarge{
+    width: 48px;
+    height: 48px;
+}
+
+.iconXL{
+    width: 80px;
+    height: 80px;
+}
+
+.navItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    min-width: 190px;
+    height: 70px;
+    border-right: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Title */
+
+h1{
+    font-size: 4rem;
+}
+
+h4{
+    font-size: 1.3rem;
+    padding: 4px 40px;
+    margin-bottom: 60px;
+    background-color: #D6FF38;
+}
+
+#title{
+    padding: 2rem 0;
+    width: 100vw;
+}
+
+#titleImg{
+    width: 100%;
+    height: 450px;
+}
+
+#herTees{
+    background-image: url(../imgs/woman-black.webp);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 25%;
+}
+
+#hisTees{
+    background-image: url(../imgs/man-white.webp);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 25%;
+}
+
+#newTees{
+    background-image: url(../imgs/shirt-full-purple.webp);    
+    background-size: cover;
+    background-position: 50% 25%;
+    height: 450px;
+    width: 48%;
+}
+
+.titleHidden{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: #0000;
+    font-size: 1.5rem;
+    background: linear-gradient(to bottom,#D6FF3800, #D6FF3800);
+}
+
+.titleHidden:hover{
+    color: #000F;
+    background: linear-gradient(to bottom,#D6FF3800, #D6FF3880);
+}
+
+.titleHiddenText{
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Products */
+
+h2{
+    font-size: 2rem;
+}
+
+h5{
+    font-size: 7rem;
+}
+
+.productImg{
+    width: 380px;
+    height: 570px;
+    background-position: center;
+    background-size: 100%;
+    cursor: pointer;
+    transition-property: background-size;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.productImg:hover{
+    background-size: 150%;
+}
+
+.productImg:focus{
+    background-size: 150%;
+}
+
+.bestSeller{
+    position: relative;
+    width: 40%;
+    color: #D6FF38;
+    background-color: #000F;
+    font-size: 0.9rem;
+    padding: 4px 0px;
+    text-align: center;
+}
+
+.productDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    background-color: #FFF;
+    padding: 8px 4px;
+}
+
+#buyButton{
+    color: #D6FF38;
+    background-color: #000F;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+}
+
+#productsSection{
+    width: 90vw;
+    padding: 24px 0 60px;
+}
+
+#product0Img{
+    background-image: url(../imgs/shirt-img-orange.webp);
+}
+
+#product1Img{
+    background-image: url(../imgs/shirt-sunset.webp);
+}
+
+#product2Img{
+    background-image: url(../imgs/shirt-full-white.webp);
+}
+
+#product3Img{
+    background-image: url(../imgs/shirt-green.webp);
+}
+
+#product4Img{
+    background-image: url(../imgs/shirt-full-pink.webp);
+}
+
+#product5Img{
+    background-image: url(../imgs/shirt-full-blue.webp);
+}
+
+#product6Img{
+    background-image: url(../imgs/shirt-notToday.webp);
+}
+
+#product7Img{
+    background-image: url(../imgs/shirt-full-green.webp);
+}
+
+#promoAnchor{
+    width: 100vw;
+    height: 120px;
+    font-size: 2rem;
+}
+
+#promoAnnouncement{
+    width: 100%;
+    min-height: 750px;
+}
+
+#promoArrowLeft{
+    position: relative;
+    left: 40%;
+    transform: translateX(-20vw);
+    opacity: 0;
+}
+
+#promoArrowRight{
+    position: relative;
+    right: 40%;
+    transform: translateX(20vw);
+    opacity: 0;
+}
+
+#promoArrowLeftWrapper{
+    flex-grow: 2;
+    overflow: hidden;
+}
+
+#promoArrowRightWrapper{
+    flex-grow: 2;
+    overflow: hidden;
+}
+
+#promoSection{
+    width: 100%;
+}
+
+/* #promoText{
+    width: 100%;
+} */
+
+#promoLeft{
+    width: 60%;
+    min-height: 750px;
+    background: linear-gradient(to bottom, #D6FF3800 ,#D6FF38);
+}
+
+#promoRight{
+    width: 40%;
+    min-height: 750px;
+    background-image: url(../imgs/woman-white.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+ul{
+    font-size: 0.9rem;
+}
+
+#footer{
+    width: 100vw;
+    min-height: 400px;
+    border: 1px solid #000F;
+}
+
+#contactDiv{
+    height: 80%;
+    color: #FFFF;
+    background-color: #000F;
+}
+
+#footerLogo{
+    font-size: 1.5rem;
+}
+
+#footerLeft{
+    width: 30%;
+}
+
+#footerRight{
+    width: 70%;
+}
+
+#linksDiv{
+    height: 80%;
+    font-size: 1.3rem;
+}
+
+#socialsDiv{
+    height: 20%;
+}
+
+#socialFB{
+    background-image: url(../imgs/icon-facebook.png);
+}
+
+#socialIG{
+    background-image: url(../imgs/icon-instagram.png);
+}
+
+#socialYT{
+    background-image: url(../imgs/icon-youtube.png);
+}
+
+#socialPinterest{
+    background-image: url(../imgs/icon-pinterest.png);
+}
+
+#socialTiktok{
+    background-image: url(../imgs/icon-tiktok.png);
+}
+
+#trademarkDiv{
+    height: 20%;
+    background-color: #D6FF38;
+    border-top: 1px solid #000F;
+    border-left: 1px solid #000F;
+}
+.socialsIcon{
+    width: 24px;
+    height: 24px;
+    background-size: contain;;
+}
