@@ -15,9 +15,9 @@
 
     <title>T SHOP - Sempre tem uma pra você</title>
 </head>
-<body class="montserrat column overflow-x-hidden justify-center align-center">
-    <div class="column justify-center align-center width-100vw">
-        <header tabindex="-1">
+<body class="montserrat column justify-center align-center width-100 box-sizing-border">
+    <div class="column justify-center align-center width-100">
+        <header tabindex="-1" class="box-sizing-border">
             <div id="discountAlert">
                 <p>Promoção! 25% de desconto em todo site usando o cupom TEES25</p>
             </div>
@@ -53,12 +53,12 @@
             </div>
         </header>
     
-        <main id="main" class="column justify-center align-center">
+        <main id="main" class="column justify-center align-center box-sizing-border">
 
             <!-- Title -->
-            <div id="title" class="column justify-center align-center">
+            <div id="title" class="column justify-center align-center box-sizing-border">
                 <h1 class="arial font-800">T SHOP</h1>
-                <h4 class="font-300">Sempre tem uma pra você</h3>
+                    <h4 class="font-300">Sempre tem uma pra você</h3>
     
                 <div id="titleImg" class="row justify-between">
                     <figure id="herTees">
@@ -80,7 +80,7 @@
             </div>
     
             <!-- Products -->
-            <section id="productsSection" class="column align-center gap-48">
+            <section id="productsSection" class="column align-center gap-48 box-sizing-border">
                 <h2 class="arial font-800">Lançamentos</h2>
                 <div class="row gap-36 wrap justify-center align-center">
                     <article id="product0">
@@ -160,7 +160,7 @@
             </section>
     
             <!-- Promotional Section -->
-            <section id="promoSection" class="column justify-center align-center">
+            <section id="promoSection" class="column justify-center align-center box-sizing-border">
                 <div id="promoAnnouncement" class="row">
                     <div id="promoLeft" class="column justify-center align-center gap-36">
                         <svg preserveAspectRatio="xMidYMid meet" data-bbox="31.764 18.695 136.472 162.61" viewBox="31.764 18.695 136.472 162.61" class="iconXL" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-labelledby="svgcid--fpq475-uscf32">
@@ -194,7 +194,7 @@
             </section>
         </main>
     
-        <footer id="footer" class="row" tabindex="-1">
+        <footer id="footer" class="row box-sizing-border" tabindex="-1">
             <div id="footerLeft" class="column">
                 <div id="contactDiv" class="column justify-center align-center gap-24">
                     <h3 id="footerLogo" class=""><a href="">T SHOP</a></h3>
@@ -275,7 +275,7 @@
             trigger: "#promoAnchor",
             start: "top 90%",
             toggleActions: "play none none none"
-          }
+        }
     })
     gsap.to("#promoArrowLeft", {
         x:0,
@@ -294,7 +294,7 @@
             start: "top 90%",
             markers:false,
             toggleActions: "play none none none"
-          }
+        }
     })
 </script>    
 </html>
