@@ -126,6 +126,12 @@ h4{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    padding: 2rem 0;
+    transition-duration: 10ms;
+}
+
+.service:hover{
+    color: #36B2B0;
 }
 
 #servicesSection{
@@ -151,7 +157,8 @@ h4{
 }
 
 #aboutSection{
-    padding: 5rem 0;
+    width: 100%;
+    padding: 5rem 2%;
     background-color: #FFFF;
 }
 
@@ -172,7 +179,7 @@ h4{
 
 
 
-/* Testimonials section */
+/* Featured Items Section */
 
 .featuredHover{
     width: 100%;
@@ -190,8 +197,14 @@ h4{
 .featured{
     width: 300px;
     height: 300px;
-    background-size: cover;
+    background-size: 100%;
+    background-position: bottom;
     position: relative;
+    background-repeat: no-repeat;
+}
+
+.featured:hover{
+    background-size: 105%;
 }
 
 #featured0{
@@ -254,8 +267,12 @@ h5{
 
 .reviewPic{
     width: 120px;
-    border: 2px solid #363C45;
+    border: 8px solid #363C45;
     border-radius: 50%;
+}
+
+.reviewPic:hover{
+    border: 0px solid #363C45;
 }
 
 #reviewsSection{
