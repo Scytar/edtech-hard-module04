@@ -1,0 +1,538 @@
+/* 
+HTML MONTSERRAT import
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;800&display=swap" rel="stylesheet"> 
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: ease-in-out 200ms
+}
+
+body{
+    color: #363C45;
+    background-color: #EFF2F5;
+}
+
+.box-sizing-border{
+    box-sizing: border-box;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.display-hidden{
+    visibility: hidden;
+}
+
+.justify-start{
+    justify-content: start;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.gap-12{
+    gap: 12px;
+}
+
+.gap-24{
+    gap: 24px;
+}
+
+.gap-36{
+    gap: 36px;
+}
+
+.gap-48{
+    gap: 48px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.montserrat{
+    font-family: "Montserrat";
+}
+
+.arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.max-w-1920{
+    max-width: 1920px;
+}
+
+.max-w-1024{
+    max-width: 1024px;
+}
+
+.width-100vw{
+    width: 100vw;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.font-800{
+    font-weight: 800;
+}
+
+.font-600{
+    font-weight: 600;
+}
+
+.font-200{
+    font-weight: 200;
+}
+
+.font-300{
+    font-weight: 300;
+}
+
+.hover-visible{
+    opacity: 0;
+}
+
+.hover-visible:hover{
+    opacity: 1;
+}
+
+.list-style-none{
+    list-style-type: none;
+}
+
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.transition-200ms{
+    transition: ease-in-out 200ms;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+
+
+
+/* PetShop CSS */
+
+h2{
+    font-size: 3rem;
+}
+
+#chatButton{
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    color: #FFFF;
+    background-color: #36B2B0;
+    z-index: 100;
+}
+
+#chatButton:hover{
+    background-color: #80CCCC;
+}
+
+
+
+
+/* Header */
+
+.bookButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 3rem;
+    border: 0px;
+    border-radius: 2rem;
+    color: #FFFF;
+    background-color: #36B2B0;
+    box-shadow: 2px 2px 2px #000F;
+    cursor: pointer;
+}
+
+.bookButton:hover{
+    background-color: #80CCCC;
+}
+
+#bookHeader{
+    background-color: #8B6357;
+    box-shadow: 0 0 0 #0000;
+}
+
+#bookHeader:hover{
+    background-color: #B39C96;
+}
+
+#header{
+    height: 5rem;
+    padding: 0 5%;
+    background-color: #EFF2F5;
+    z-index: 100;
+}
+
+#logoSVG{
+    width: 5rem;
+}
+
+#logoTitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#loginSVG{
+    fill: #36B2B0;
+    width: 1.5rem;
+}
+
+#loginSVG:hover{
+    fill: #80CCCC;
+}
+
+#headerSpacer{
+    height: 5rem;
+}
+
+
+
+
+/* Title Section */
+
+h1{
+    font-size: 5rem;
+}
+
+
+@keyframes bgCarrousel {
+    0% {background-image: url(../imgs/pet/dog-ball.jpg);}
+    25% {background-image: url(../imgs/pet/dog-ball.jpg);}
+    33%{background-image: url(../imgs/pet/dog-hug.jpg);}
+    58%{background-image: url(../imgs/pet/dog-hug.jpg);}
+    66%{background-image: url(../imgs/pet/dog-laying.jpg);}
+    91%{background-image: url(../imgs/pet/dog-laying.jpg);}
+    100% {background-image: url(../imgs/pet/dog-ball.jpg);}
+}
+
+#titleSection{
+    width: 90%;
+    min-height: 90vh;
+    padding: 0 5%;
+    color: #FFFF;
+    text-shadow: 4px 0 2px #000F, 0 4px 2px #000F, -4px 0 2px #000F, 0 -4px 2px #000F, 2px 2px 2px #000F, -2px 2px 2px #000F, 2px -2px 2px #000F, -2px -2px 2px #000F;
+    animation: bgCarrousel 24s infinite;
+    background-size: cover;
+}
+
+
+
+
+
+/* Services Section */
+
+h4{
+    font-size: 1.5rem;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#servicesSection{
+    width: 70%;
+    padding: 3rem 0;
+}
+
+
+
+
+
+
+/* About section */
+
+.aboutP{
+    font-size: 0.9rem;
+    line-height: 2rem;
+}
+
+#aboutPic{
+    position: relative;
+    left: 48px;
+}
+
+#aboutSection{
+    padding: 5rem 0;
+    background-color: #FFFF;
+}
+
+#aboutText{
+    position: relative;
+    right: 48px;
+    height: 100%;
+    width: 30%;
+    color: #FFFF;
+    padding: 2rem 4rem;
+    background-color: #8B6357;
+}
+
+
+
+
+
+
+
+
+/* Testimonials section */
+
+.featuredHover{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    opacity: 0;
+    background-color: #363C4580;
+    text-align: center;
+}
+
+.featuredHover:hover{
+    opacity: 1;    
+}
+
+.featured{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+}
+
+#featured0{
+    background-image: url(../imgs/pet/01.jpg);
+}
+
+#featured1{
+    background-image: url(../imgs/pet/02.jpg);
+}
+
+#featured2{
+    background-image: url(../imgs/pet/03.jpg);
+}
+
+#featured3{
+    background-image: url(../imgs/pet/04.jpg);
+}
+
+#featured4{
+    background-image: url(../imgs/pet/05.jpg);
+}
+
+#featured5{
+    background-image: url(../imgs/pet/06.jpg);
+}
+
+#featured6{
+    background-image: url(../imgs/pet/07.jpg);
+}
+
+#featured7{
+    background-image: url(../imgs/pet/08.jpg);
+}
+
+#featuredSection{
+    min-height: 600px;
+    color: #FFFF;
+    background-color: #363C45;
+}
+
+#featuredTitleWrapper{
+    height: 300px;
+}
+
+
+
+
+
+
+/* Reviews Section */
+
+h5{
+    font-size: 1rem;
+}
+
+.review{
+    width: 20%;
+    text-align: center;
+}
+
+.reviewPic{
+    width: 120px;
+    border: 2px solid #363C45;
+    border-radius: 50%;
+}
+
+#reviewsSection{
+    width: 90%;
+    min-height: 700px;
+}
+
+
+
+
+
+/* Schedule Section */
+
+#schedule{
+    font-size: 1.2rem;
+}
+
+#scheduleBg{
+    width: 100%;
+    min-height: 700px;
+    background-color: #363C4580;
+}
+
+#scheduleSection{
+    color: #FFFF;
+    min-height: 700px;
+    background-image: url(../imgs/pet/bg-tools.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+/* Contact section */
+
+.input{
+    font-family: "Montserrat", sans-serif;
+    padding: 0.8rem 0.5rem;
+    width: 49%;
+    border: 1px solid #0000;
+    border-bottom: 1px solid #363C45;
+    background-color: #EFF2F5;
+}
+
+.input:hover{
+    border: 1px solid #363C45;
+}
+
+#contactSection{
+    width: 90%;
+    min-height: 700px;
+}
+
+#contactInfo{
+    width: 30%;
+    height: 300px;
+}
+
+#contactForm{
+    display: flex;
+    width: 30%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+#contactSubmit{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    color: #FFFF;
+    background-color: #363C45;
+    border: none;
+}
+
+#contactSubmit:hover{
+    background-color: #868C95;
+}
+
+#inputSubject{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#inputMessage{
+    min-width: 100%;
+    min-height: 8rem;
+    resize: none;
+}
+
+
+
+
+
+/* footer */
+
+#footer{
+    color: #36B2B0;
+    min-height: 200px;
+    background-color: #FFFF;
+    font-size: 0.8rem;
+}

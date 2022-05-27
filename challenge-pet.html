@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/style-challenge-pet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;800&display=swap" rel="stylesheet"> 
+
+    <!-- Refference URL: https://www.wix.com/demone2/dog-grooming -->
+
+    <title>Wendy's Dog Salon</title>
+</head>
+<body class="montserrat">
+    <!-- Header -->
+    <header id="header" class="fixed width-100 row justify-between">
+        <div class="row gap-12 justify-start align-center">
+            <svg id="logoSVG" preserveAspectRatio="xMidYMid meet" data-bbox="0 0 2467.999 1588" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2467.999 1588" data-type="color" role="presentation" aria-hidden="true">
+                <g>
+                    <path fill-rule="evenodd" fill="#363c45" d="M2031.004 355.134c-31.45 0-56.931-25.49-56.931-56.913s25.481-56.913 56.93-56.913c31.45 0 56.963 25.49 56.963 56.913s-25.512 56.913-56.962 56.913m394.126-210.72h-354.358c-99.668 0-254.782-57.654-362.274-144.414 0 0 40.448 214.428-49.757 372.19-65.157 113.887-183.348 198.824-451.273 198.824H195.45C64.487 571.014 17.359 419.4 17.359 419.4-77.392 577.626 246.629 1588 246.629 1588v-546.698H247c0-13.533 10.978-24.501 24.523-24.501s24.523 10.968 24.523 24.501L341.009 1588l44.809-544.72c-.093-.68-.402-1.298-.402-1.978 0-10.937 8.844-19.805 19.791-19.805 10.947 0 19.792 8.868 19.792 19.805L469.993 1588l44.932-546.698h.372c0-10.66 8.69-19.31 19.327-19.31 10.7 0 19.358 8.65 19.358 19.31L598.915 1588l44.994-546.698h.186c0-10.66 8.659-19.31 19.327-19.31 10.7 0 19.328 8.65 19.328 19.31h.185L727.9 1588l44.932-546.698h.433c0-10.66 8.659-19.31 19.328-19.31 10.669 0 19.327 8.65 19.327 19.31 0 .062-.03.093-.03.155L856.851 1588l44.963-546.698h.248c0-10.66 8.658-19.31 19.327-19.31s19.328 8.65 19.328 19.31h.123L985.805 1588l44.87-545.74c0-.309-.185-.587-.185-.958 0-10.66 8.659-19.31 19.327-19.31s19.328 8.65 19.328 19.31h.65L1114.757 1588l44.84-545.122c-.031-.556-.31-1.02-.31-1.576 0-10.66 8.659-19.31 19.328-19.31s19.327 8.65 19.327 19.31h.835L1243.742 1588l44.777-544.566c-.092-.71-.432-1.39-.432-2.132 0-10.937 8.875-19.805 19.822-19.805s19.822 8.868 19.822 19.805L1372.694 1588l44.84-545.276c-.03-.495-.278-.896-.278-1.422 0-10.937 8.844-19.805 19.822-19.805 10.916 0 19.822 8.868 19.822 19.805 0 .278-.154.495-.154.711L1501.647 1588l44.902-546.018c0-.216-.124-.432-.124-.68 0-12.853 10.422-23.296 23.286-23.296 12.895 0 23.317 10.443 23.317 23.296V1588s134.674-458.795 221.137-639.39c82.907-173.148 164.33-308.232 362.027-355.69 146.085-35.038 284.5-86.698 291.798-411.645.279-11.988-5.35-36.86-42.86-36.86" data-color="1"></path>
+                </g>
+            </svg>
+            <h3 id="logoTitle" class="arial">Wendy's Dog Salon</h2>
+        </div>
+
+        <!-- NavBar -->
+        <nav class="row gap-24 justify-end align-center">
+            <div>
+                <span>Home</span>
+            </div>
+            <div>
+                <span>Book Online</span>
+            </div>
+            <div class="row justify-center align-center gap-24">
+                <a href="">
+                    <img src="./imgs/pet/Facebook.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./imgs/pet/Instagram.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./imgs/pet/Yelp for business.png" alt="">
+                </a>
+            </div>
+            <div class="row align-center justify-center gap-12 cursor-pointer">
+                <svg id="loginSVG" data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <g>
+                        <path d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0"></path>
+                    </g>
+                </svg>
+                <span>Log In</span>
+            </div>
+            <button id="bookHeader" class="bookButton">
+                BOOK NOW
+            </button>
+        </nav>
+    </header>
+    <div id="headerSpacer"></div>
+
+    <!-- Chat Button -->
+    <button id="chatButton" class="fixed cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" style="border-radius: 0px; fill: rgb(255, 255, 255); width: 32px; height: 32px; flex-shrink: 0;">
+            <path d="M16 2C8.28 2 2 7.8 2 14.93a12.144 12.144 0 001.696 6.15l-1.668 7.51A1.16 1.16 0 003.63 29.9l6.914-3.072A14.835 14.835 0 0016 27.861c7.72 0 14-5.8 14-12.93S23.72 2 16 2zm4.508 16.32h-9.016a1.16 1.16 0 010-2.32h9.016a1.16 1.16 0 010 2.32zm0-4.638h-9.016a1.16 1.16 0 010-2.318h9.016a1.16 1.16 0 110 2.318z" fill="currentColor" fill-rule="nonzero"></path>
+        </svg>
+    </button>
+
+    <!-- Main content -->
+    <main class="column align-center width-100">
+
+        <!-- Title -->
+        <section id="titleSection" class="column justify-center gap-48">
+            <h1>
+                Wendy's<br/>
+                Dog Salon
+            </h1>
+            <h3>A loving, professional dog care in San Francisco</h3>
+            <button class="bookButton row">
+                BOOK NOW
+            </button>
+        </section>
+
+        <!-- Services -->
+        <section id="servicesSection" class="column align-center justify-center gap-48">
+            <h2>Our Services</h2>
+
+            <div class="row align-center justify-center gap-48 wrap">
+                <article class="service">
+                    <figure>
+                        <img src="./imgs/pet/service01.jpg" alt="A furry dog being groomed">
+                    </figure>
+                    <h4>Full Grooming                </h4>
+                    <p>This is Your Service Subtitle</p>
+                </article>
+
+                <article class="service">
+                    <figure>
+                        <img src="./imgs/pet/service02.png" alt="A dog being dry washed">
+                    </figure>
+                    <h4>Wash & Blow Dry</h4>
+                    <p>This is Your Service Subtitle</p>
+                </article>
+
+                <article class="service">
+                    <figure>
+                        <img src="./imgs/pet/service03.png" alt="A dog having a shower">
+                    </figure>
+                    <h4>Self Serve Dog Wash</h4>
+                    <p>This is Your Service Subtitle</p>
+                </article>
+
+                <article class="service">
+                    <figure>
+                        <img src="./imgs/pet/service04.png" alt="A dog having his nails clipped">
+                    </figure>
+                    <h4>Nail Clipping</h4>
+                    <p>This is Your Service Subtitle</p>
+                </article>
+            </div>
+
+            <button class="bookButton row">
+                BOOK NOW
+            </button>
+        </section>
+
+        <!-- About -->
+        <section id="aboutSection">
+            <div class="row justify-center align-center">
+                <figure id="aboutPic">
+                    <img src="./imgs/pet/09.jpg" alt="Woman hugging a dog">
+                </figure>
+                <div id="aboutText" class="column gap-24">
+                    <h2 id="aboutTitle">Hi, I'm Wendy</h2>
+                    <p class="aboutP">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                    </p>
+                    <p class="aboutP">
+                        This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured -->
+        <section id="featuredSection" class="column align-center gap-48 width-100">
+            <div id="featuredTitleWrapper" class="column align-center justify-evenly">
+                <h2 id="featuredTitle">My Happy Clients</h2>
+                <p>Follow Us @Wendys_salon</p>
+            </div>
+
+            <div id="featuredWrapper" class="row width-100">
+                <article id="featured0" class="featured">
+                    <div class="featuredHover column justify-center align-center">
+                        <span>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </article>
+                
+                <article id="featured1" class="featured">
+                    <div class="featuredHover column justify-center align-center">
+                        <span>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </article>
+                
+                <article id="featured2" class="featured">
+                    <div class="featuredHover column justify-center align-center">
+                        <span>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </article>
+                
+                <article id="featured3" class="featured">
+                    <div class="featuredHover column justify-center align-center">
+                        <span>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </article>
+                
+                <article id="featured4" class="featured">
+                    <div class="featuredHover column justify-center align-center">
+                        <span>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </article>
+                
+                <article id="featured5" class="featured">
+                    <div class="featuredHover column justify-center align-center">
+                        <span>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </article>
+                
+                <article id="featured6" class="featured">
+                    <div class="featuredHover column justify-center align-center">
+                        <span>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </article>
+                </article>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviewsSection" class="column justify-evenly align-center gap-48">
+            <h2>Reviews</h2>
+
+            <div class="row justify-evenly gap-48">
+                <article class="review column align-center gap-48">
+                    <img class="reviewPic" src="./imgs/pet/06.jpg" alt="">
+                    <p>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services."</p>
+                    <h5>Siney's Owner</h5>
+                </article>
+                
+                <article class="review column align-center gap-48">
+                    <img class="reviewPic" src="./imgs/pet/02.jpg" alt="">
+                    <p>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services."</p>
+                    <h5>Jacko's Owner</h5>
+                </article>
+                
+                <article class="review column align-center gap-48">
+                    <img class="reviewPic" src="./imgs/pet/03.jpg" alt="">
+                    <p>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services."</p>
+                    <h5>Leon's Owner</h5>
+                </article>
+            </div>
+        </section>
+
+        <!-- Opening Schedule -->
+        <section id="scheduleSection" class="column align-center justify-center width-100">
+            <div id="scheduleBg" class="column align-center justify-center gap-48 text-align-center">
+                <h2>Opening Hours</h2>
+
+                <div id="schedule" class="column gap-24">
+                    <p>Mon - Fri: 9am - 6pm</p>
+                    <p>Sat: 10am - 2pm</p>
+                    <p>Sun: Closed</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contactSection" class="row justify-around align-center">
+            <div class="row justify-around align-start">
+                <div id="contactInfo" class="column justify-between align-start">
+                    <h2>Ask Me Anything</h2>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                    </p>
+                    <p>
+                        500 Terry Francois Street, San Francisco, CA 94158
+                    </p>
+                    <p>
+                        info@mysite.com
+                    </p>
+                    <p>
+                        123-456-7890
+                    </p>
+                </div>
+    
+                <form id="contactForm">
+                    <input class="input" type="text" placeholder="Name" required>
+                    <input class="input" type="email" placeholder="Email" required>
+                    <input class="input" type="text" placeholder="Phone" required>
+                    <input class="input" type="text" placeholder="Address" required>
+                    <input id="inputSubject" class="input" type="text" placeholder="Subject" required>
+                    <textarea id="inputMessage" class="input" name="" id="" cols="30" rows="10" placeholder="Type your message here..." required></textarea>
+                    <button id="contactSubmit" type="submit" method="post">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="column justify-center align-center gap-48 width-100">
+            <div class="row justify-center align-center gap-12">
+                <a href="">
+                    <img src="./imgs/pet/Facebook.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./imgs/pet/Instagram.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./imgs/pet/Yelp for business.png" alt="">
+                </a>
+            </div>
+            <p>
+                ©2022 Wendy's Dog Salon. Proudly created by Scytar
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
