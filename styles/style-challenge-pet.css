@@ -284,6 +284,7 @@ h5{
     min-height: 700px;
     background-image: url(../imgs/pet/bg-tools.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 
