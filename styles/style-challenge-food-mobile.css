@@ -7,32 +7,42 @@
     #descriptionContent{
         width: 90%;
         padding: 0 2rem;
+        text-align: center;
     }
 
     #featuredContent{
         width: 90%;
         padding: 0 2rem;
+        text-align: center;
     }
 
     #aboutContent{
         width: 90%;
         padding: 0 2rem;
+        text-align: center;
     }
 }
 
 @media (max-width: 640px) {
     
+    h1{
+        font-size: 8rem;
+    }
+
+    h2{
+        width: 100%;
+    }
+
     #titleBackground{
         min-height: 90vh;
     }
-
-
 
     #descriptionContent{
         flex-direction: column;
         min-height: 70vh;
         padding: 2rem 0;
         justify-content: space-evenly;
+        gap: 2rem;
     }
 
     #featuredContent{
@@ -70,7 +80,7 @@
 
     #gallerySection{
         flex-wrap: wrap;
-        min-height: 1920px;
+        min-height: 300vmin;
     }
 
     .galleryItem{
@@ -89,6 +99,7 @@
 
     #contactSection{
         min-height: 80vh;
+        padding: 2rem 0;
         justify-content: space-around;
     }
 
@@ -104,6 +115,7 @@
     #contactContent{
         width: 100%;
         min-height: 60vh;
+        gap: 2rem;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
