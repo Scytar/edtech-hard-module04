@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./styles/style-base-classes.css">
     <link rel="stylesheet" href="./styles/style-challenge-pet.css">
+    <link rel="stylesheet" href="./styles/style-challenge-pet-mobile.css">
 
     <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,22 +32,24 @@
 
         <!-- NavBar -->
         <nav class="row gap-24 justify-end align-center">
-            <div>
-                <span>Home</span>
-            </div>
-            <div>
-                <span>Book Online</span>
-            </div>
-            <div class="row justify-center align-center gap-24">
-                <a href="">
-                    <img src="./imgs/pet/Facebook.png" alt="">
-                </a>
-                <a href="">
-                    <img src="./imgs/pet/Instagram.png" alt="">
-                </a>
-                <a href="">
-                    <img src="./imgs/pet/Yelp for business.png" alt="">
-                </a>
+            <div id="navBar" class="row gap-24 justify-end align-center">
+                <div>
+                    <span>Home</span>
+                </div>
+                <div>
+                    <span>Book Online</span>
+                </div>
+                <div class="row justify-center align-center gap-24">
+                    <a href="">
+                        <img src="./imgs/pet/Facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./imgs/pet/Instagram.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./imgs/pet/Yelp for business.png" alt="">
+                    </a>
+                </div>
             </div>
             <div class="row align-center justify-center gap-12 cursor-pointer">
                 <svg id="loginSVG" data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
@@ -156,7 +159,7 @@
                 <p>Follow Us @Wendys_salon</p>
             </div>
 
-            <div id="featuredWrapper" class="row justify-center width-100">
+            <div id="featuredWrapper" class="row justify-center width-100 wrap">
                 <article id="featured0" class="featured">
                     <div class="featuredHover column justify-center align-center">
                         <span>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
@@ -271,23 +274,24 @@
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer id="footer" class="column justify-center align-center gap-48 width-100">
-            <div class="row justify-center align-center gap-12">
-                <a href="">
-                    <img src="./imgs/pet/Facebook.png" alt="">
-                </a>
-                <a href="">
-                    <img src="./imgs/pet/Instagram.png" alt="">
-                </a>
-                <a href="">
-                    <img src="./imgs/pet/Yelp for business.png" alt="">
-                </a>
-            </div>
-            <p>
-                ©2022 Wendy's Dog Salon. Proudly created by Scytar
-            </p>
-        </footer>
     </main>
+    
+    <!-- Footer -->
+    <footer id="footer" class="column justify-center align-center gap-48 width-100">
+        <div class="row justify-center align-center gap-12">
+            <a href="">
+                <img src="./imgs/pet/Facebook.png" alt="">
+            </a>
+            <a href="">
+                <img src="./imgs/pet/Instagram.png" alt="">
+            </a>
+            <a href="">
+                <img src="./imgs/pet/Yelp for business.png" alt="">
+            </a>
+        </div>
+        <p>
+            ©2022 Wendy's Dog Salon. Proudly created by Scytar
+        </p>
+    </footer>
 </body>
 </html>

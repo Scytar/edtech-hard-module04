@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../fonts/Proxima-Nova.woff2);
+}
+
+@font-face {
+    font-family: "Cookie";
+    src: url(../fonts/Cookie.woff2);
+}
+
+@font-face {
+    font-family: "Helvetica Roman";
+    src: url(../fonts/Helvetica-Roman.woff);
+}
+
+body{
+    width: 100%;
+    color: #FFFF;
+    background-color: #FFFF;
+    font-family: "Helvetica Roman";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    height: 3rem;
+    background-color: #362E26;
+    z-index: 100;
+}
+
+#headerSpace{
+    height: 3rem;
+}
+
+a:link,a:visited{
+    color: #FFFF;
+}
+
+figure{
+    display: flex;
+}
+
+
+
+/* Title Section */
+
+h1{
+    font-family: "Cookie";
+    font-size: 11rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 6rem;
+}
+
+h3{
+    font-family: "Proxima Nova";
+    font-size: 1.6rem;
+    font-weight: 200;
+    
+}
+
+.fancySVG{
+    height: 2.2rem;
+    fill: #FFFF;
+    stroke: #FFFF;
+}
+
+#titleBackground{
+    background-color: #362E2640;
+    width: 100%;
+    height: 800px;
+}
+
+#titleSection{
+    min-height: 800px;
+    background-image: url(../imgs/food/food-title.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* Description Section */
+
+h2{
+    width: 30%;
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#descriptionSection{
+    min-height: 500px;
+    background-color: #E78585;
+}
+
+#descriptionBackground{
+    min-height: 500px;
+    background-image: url(../imgs/food/bg-sparkling.png);
+}
+
+#descriptionContent{
+    width: 65%;
+    font-size: 0.95rem;
+    line-height: 1.2rem;
+}
+
+
+/* Featured Section */
+
+#featuredSection{
+    min-height: 700px;
+    color: #000F;
+    text-align: center;
+}
+
+#pinkSVG{
+    fill: #E78585;
+    stroke: #E78585;
+}
+
+
+/* About Section */
+
+#aboutSection{
+    min-height: 600px;
+    background-color: #70BABE;
+}
+
+#aboutBackground{
+    min-height: 600px;
+    background-image: url(../imgs/food/bg-grid.png);
+    opacity: 0.3;
+}
+
+#aboutContent{
+    z-index: 10;
+}
+
+#aboutTitle{
+    width: 100%;
+    text-align: start;
+    line-height: 4rem;
+}
+
+
+/* Gallery Section */
+
+.galleryItem{
+    width: 25%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.galleryItem:hover{
+    width: 30%;
+}
+
+#gallerySection{
+    overflow: hidden;
+    height: 300px;
+    max-width: 1920px;
+}
+
+
+/* Contact Section */
+
+form{
+    width: 50%;
+    gap: 8px;
+    color: #FFFF;
+}
+
+#contactSection{
+    min-height: 500px;
+    background-color: #362E26;
+}
+
+#contactText{
+    width: 20%;
+}
+
+#contactInfo{
+    text-align: center;
+}
+
+.input{
+    color: #FFFF;
+    padding: 0.2rem 1.5rem;
+    width: 100%;
+    font-family: "Helvetica Roman";
+    font-size: 1rem;
+    background-color: #514539;
+    border: 1px solid #FFF0;
+    resize: none;
+}
+
+.input::placeholder{
+    color: #FFFF;
+}
+
+.input:hover{
+    border: 1px solid #FFFF;
+}
+
+.input:active{
+    border: 1px solid #FFFF;
+    border: none;
+}
+
+.socialsIcons{
+    height: 1.2rem;
+    fill: currentColor;
+}
+
+#sendButton{
+    color: #FFFF;
+    font-family: "Helvetica Roman";
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background: linear-gradient(to bottom, #8f8378, #8f8378, #8f8378, #8f8378 , #665748, #665748, #665748, #665748);
+}
+
+#footerNote{
+    width: 100%;
+    padding: 2rem 0;
+    font-size: 0.7rem;
+    color: #8f8378;
+    border-top: 1px solid #8f8378;
+    text-align: center;
+}

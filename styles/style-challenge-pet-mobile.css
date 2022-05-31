@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+    
+    #navBar{
+        display: none;
+    }
+
+    #header{
+        width: 100px;
+        padding: 0 2%;
+    }
+
+
+
+}

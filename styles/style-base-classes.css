@@ -114,6 +114,18 @@ body{
     max-width: 1024px;
 }
 
+.max-w-800{
+    max-width: 800px;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
 .width-100vw{
     width: 100vw;
 }
