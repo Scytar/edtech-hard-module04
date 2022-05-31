@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./styles/style-base-classes.css">
     <link rel="stylesheet" href="./styles/style-challenge-food.css">
+    <link rel="stylesheet" href="./styles/style-challenge-food-mobile.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,9 +60,9 @@
         <!-- Description -->
         <section id="descriptionSection" class="width-100">
             <div id="descriptionBackground" class="row justify-center align-center width-100">
-                <div class="row justify-between align-center width-100 max-w-1024">
+                <div id="descriptionContent" class="row justify-between align-center width-100 max-w-1024">
                     <h2>COM CHOCOLATE E COM AFETO</h2>
-                    <div id="descriptionContent" class="column justify-center align-start gap-24">
+                    <div id="descriptionText" class="column justify-center align-start gap-24">
                         <p>
                             Sou um parágrafo. Clique aqui para editar e adicionar o seu próprio texto. É fácil! Basta clicar em "Editar Texto" ou clicar duas vezes sobre mim e você poderá adicionar o seu próprio conteúdo e trocar fontes. Sinta-se à vontade para arrastar e soltar em qualquer lugar em sua página. Sou um ótimo lugar para você contar sua história e permitir que seus clientes saibam um pouco mais sobre você.
                         </p>
@@ -75,7 +76,7 @@
         
         <!-- Featured -->
         <section id="featuredSection" class="row justify-center align-center width-100">
-            <div class="column justify-center align-center gap-24 max-w-1024">
+            <div id="featuredContent" class="column justify-center align-center gap-24 max-w-1024">
                 <h2>NOSSOS SABORES</h2>
                 <svg id="pinkSVG" class="fancySVG" preserveAspectRatio="xMidYMid meet" data-bbox="12.007 82.52 176.985 44.098" xmlns="http://www.w3.org/2000/svg" viewBox="12.007 82.52 176.985 44.098" role="presentation" aria-hidden="true">
                     <g>
@@ -85,7 +86,7 @@
                 <p>
                     Sou um parágrafo. Clique aqui para editar e adicionar o seu próprio texto. É fácil! Basta clicar em "Editar Texto" ou clicar duas vezes sobre mim e você poderá adicionar o seu próprio conteúdo e trocar fontes.
                 </p>
-                <div class="row justify-evenly align-center width-100">
+                <div id="candyContainer" class="row justify-evenly align-center width-100">
                     <figure>
                         <img src="./imgs/food/candy-green.webp" alt="">
                     </figure>
@@ -113,7 +114,7 @@
                     </p>
                 </div>
                 <figure>
-                    <img src="./imgs/food/about-us.webp" alt="">
+                    <img  id="aboutPic" src="./imgs/food/about-us.webp" alt="">
                 </figure>
             </div>
         </section>
@@ -137,8 +138,8 @@
 
     <!-- Contact -->
     <footer id="contactSection" class="column justify-center align-center gap-48 width-100">
-        <div class="max-w-1024 column justify-center align-center width-100 gap-24">
-            <div class="row justify-around align-center width-100">
+        <div id="contactWrapper" class="max-w-1024 column justify-center align-center width-100 gap-24">
+            <div id="contactContent" class="row justify-around align-center width-100">
                 <div id="contactText" class="column justify-start align-start gap-36">
                     <h2 class="width-100">ESPERAMOS SEU CONTATO</h2>
                     <div id="contactInfo" class="column justify-start align-center gap-12 width-100">
@@ -170,7 +171,7 @@
                     <input class="input" name="email" type="email" placeholder="Email" required>
                     <input class="input" name="phoneNumber" type="text" placeholder="Telefone" required>
                     <textarea class="input" name="messageContent" placeholder="Digite sua mensagem aqui..." id=""  rows="5" required></textarea>
-                    <div class="width-100 row justify-end">
+                    <div id="sendButtonWrapper" class="width-100 row justify-end">
                         <button id="sendButton">Enviar</button>
                     </div>
                 </form>
